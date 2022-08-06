@@ -15,7 +15,7 @@ MonoBehaviour:
   title: The Number Game + The Mini Game
   author: BigCrunch22
   description: "\"Crunching numbers against an opponent that is impossible to beat.\"\r
-    - The Number Game\n\n\"The machine might be smaller in scope than the other machine,
+    - The Number Game\n\n\"The machine might be smaller in scope than the other one,
     but it makes up for it in massive loss of time.\" - The Mini Game\r\n\r\nIdea/Implementor
     - BigCrunch22\r\n\r\nTP Supported!\r\n\r\nIf someone wants to add TP Support/Logging/Anything
     useful, you have my approval for that."

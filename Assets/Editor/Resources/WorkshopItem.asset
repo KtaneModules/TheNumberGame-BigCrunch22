@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Name: WorkshopItem
   m_EditorClassIdentifier: 
   WorkshopPublishedFileID: 2843631456
-  Title: The Number Game
+  Title: The Number Game + The Mini Game
   Tags:
   - Regular Module
