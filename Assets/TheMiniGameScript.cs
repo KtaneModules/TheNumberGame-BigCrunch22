@@ -38,7 +38,7 @@ public class TheMiniGameScript : MonoBehaviour
 	#pragma warning disable 0649
     private bool TwitchPlaysActive;
     #pragma warning restore 0649
-	int waitTime = 12;
+	int waitTime = 10;
 	
 	void Awake()
 	{
@@ -55,22 +55,15 @@ public class TheMiniGameScript : MonoBehaviour
 	
 	void Start()
     {
-		Needy.OnActivate += TheMiniGameOnTP;
-		Needy.OnActivate += Generate;
-	}
+        Generate();
+        Needy.OnActivate += TheMiniGameOnTP;	}
 	
 	
 	void Generate()
     {
-		StartCoroutine(TPDeduction());
-	}
-	
-	IEnumerator TPDeduction()
-	{
-		yield return new WaitForSecondsRealtime(0.01f);
-		SquareRenderers[0].material.color = SquareRenderers[1].material.color = new Color32(0, 0, 0, 255);
-		Stages = UnityEngine.Random.Range(3, 6);
-	}
+        SquareRenderers[0].material.color = SquareRenderers[1].material.color = new Color32(0, 0, 0, 255);
+        Stages = UnityEngine.Random.Range(3, 6);
+    }
 	
 	
 	void Update()
