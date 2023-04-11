@@ -426,4 +426,37 @@ public class TheNumberGameScript : MonoBehaviour
 			MiddleDisplay.OnInteract();
 		}
 	}
+
+	// Autosolver by Kilo Bites
+
+	IEnumerator TwitchHandleForcedSolve()
+	{
+		yield return null;
+
+		while (!ModuleSolved)
+		{
+			while (!Interactable)
+			{
+				yield return true;
+			}
+
+			int current = Int32.Parse(ScoreCount.text);
+
+			int currentSol = (current % (RandomMaxNumber + 1));
+
+			string convert = currentSol.ToString();
+
+			int[] buttonsToPress = convert.Select(x => "0123456789".IndexOf(x)).ToArray();
+
+			for (int i = 0; i < buttonsToPress.Length; i++)
+			{
+				Buttons[buttonsToPress[i]].OnInteract();
+				yield return new WaitForSeconds(0.1f);
+			}
+
+			MiddleDisplay.OnInteract();
+			yield return new WaitForSeconds(0.1f);
+
+		}
+	}
 }
