@@ -440,6 +440,12 @@ public class TheNumberGameScript : MonoBehaviour
 				yield return true;
 			}
 
+			if (SubmitScore.text.Length > 0)
+			{
+				BottomDisplay.OnInteract();
+				yield return new WaitForSeconds(0.1f);
+			}
+
 			int current = Int32.Parse(ScoreCount.text);
 
 			int currentSol = (current % (RandomMaxNumber + 1));
