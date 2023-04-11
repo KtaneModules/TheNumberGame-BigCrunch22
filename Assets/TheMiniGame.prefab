@@ -2753,7 +2753,7 @@ MonoBehaviour:
   m_Script: {fileID: 1702003387, guid: 45b809be76fd7a3468b6f517bced6f28, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Parent: {fileID: 0}
+  Parent: {fileID: 114689227762648276}
   Children: []
   IsPassThrough: 0
   ChildRowLength: 0
@@ -2775,7 +2775,7 @@ MonoBehaviour:
   m_Script: {fileID: 1702003387, guid: 45b809be76fd7a3468b6f517bced6f28, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Parent: {fileID: 0}
+  Parent: {fileID: 114689227762648276}
   Children: []
   IsPassThrough: 0
   ChildRowLength: 0
@@ -2994,8 +2994,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Parent: {fileID: 0}
   Children:
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 114219972498757090}
+  - {fileID: 114230419078484762}
   IsPassThrough: 0
   ChildRowLength: 1
   Highlight: {fileID: 114982037809209236}
@@ -3042,7 +3042,7 @@ MonoBehaviour:
   m_Script: {fileID: -706292897, guid: 45b809be76fd7a3468b6f517bced6f28, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  HighlightScale: {x: 1.2, y: 1.2, z: 1.2}
+  HighlightScale: {x: 0.001, y: 0.001, z: 0.001}
   OutlineAmount: 0
 --- !u!114 &114780325079301022
 MonoBehaviour:
@@ -3198,7 +3198,7 @@ MonoBehaviour:
   m_Script: {fileID: -706292897, guid: 45b809be76fd7a3468b6f517bced6f28, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  HighlightScale: {x: 1.2, y: 1.2, z: 1.2}
+  HighlightScale: {x: 0.001, y: 0.001, z: 0.001}
   OutlineAmount: 0
 --- !u!114 &114982037809209236
 MonoBehaviour:
